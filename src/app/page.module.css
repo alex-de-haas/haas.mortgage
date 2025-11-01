@@ -1,0 +1,196 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.panel {
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 1.75rem;
+  box-shadow: 0 20px 45px rgba(31, 41, 51, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.panelHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.panelTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.panelSubtitle {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #51606f;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.field label {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.field input,
+.field select {
+  padding: 0.65rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid #d6dde4;
+  background-color: #f8fafc;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.field input:focus,
+.field select:focus {
+  outline: none;
+  border-color: #2980fe;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(41, 128, 254, 0.2);
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.metricCard {
+  padding: 1.25rem;
+  border-radius: 14px;
+  background-color: #f0f4ff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.metricLabel {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #576b84;
+}
+
+.metricValue {
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  border-radius: 18px;
+  background-color: #ffffff;
+  box-shadow: 0 16px 40px rgba(31, 41, 51, 0.08);
+}
+
+.scheduleTable {
+  width: 100%;
+  min-width: 960px;
+  border-collapse: collapse;
+}
+
+.scheduleTable thead th {
+  position: sticky;
+  top: 0;
+  background-color: #f7f9fd;
+  color: #4a5b70;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.85rem 0.75rem;
+  border-bottom: 1px solid #e1e7f0;
+  z-index: 1;
+}
+
+.scheduleTable tbody td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #eef2f7;
+  font-size: 0.9rem;
+  vertical-align: middle;
+}
+
+.scheduleTable tbody tr:nth-child(even) {
+  background-color: #f9fbff;
+}
+
+.actualInput {
+  width: 100%;
+  padding: 0.6rem 0.65rem;
+  border-radius: 10px;
+  border: 1px solid #ccd7e2;
+  background-color: #ffffff;
+}
+
+.shortfall {
+  color: #c32f2f;
+  font-weight: 600;
+}
+
+.positive {
+  color: #1f7a3a;
+  font-weight: 600;
+}
+
+.balanceCleared {
+  background-color: #e4fbf0 !important;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.button {
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.buttonPrimary {
+  background: linear-gradient(135deg, #2980fe, #5965ff);
+  color: #ffffff;
+  box-shadow: 0 12px 24px rgba(41, 128, 254, 0.25);
+}
+
+.buttonSecondary {
+  background-color: #eef3ff;
+  color: #1f2933;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: #51606f;
+}
